@@ -2,7 +2,7 @@ import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import React, { useState } from "react";
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   // const expenseTitle = "Car Insurance";
   // const expenseDate = new Date(2022, 2, 11);
   // const expenseAmount = 298.65;
@@ -11,13 +11,14 @@ function ExpenseItem(props) {
   // const day = props.date.toLocaleDateString('en-US', {day: "2-digit"});
   // const year = props.date.toLocaleDateString('en-US', {year: "numeric"});
 
-  useState();
+  // useState();
   const [title, setTitle] = useState(props.title);
 
   const clickHandler = () => {
     setTitle("Updated");
     console.log(title);
   };
+
   return (
     <div className="expense-item">
       <ExpenseDate expenseDate={props.date}></ExpenseDate>

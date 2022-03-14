@@ -21,10 +21,14 @@ function App() {
       date: new Date(2020, 7, 30),
     },
   ];
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense);
+  }
   return (
     <div>
       <h2>Welcome to React App.</h2>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense = {addExpenseHandler}></NewExpense>
       <Expenses items={expensesList}></Expenses>
     </div>
   );
