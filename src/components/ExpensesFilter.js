@@ -5,7 +5,7 @@ const ExpensesFilter = (props) => {
 
     const dropDownChangeHandler = (dropDownList) =>
     {
-        console.log(dropDownList.target.value);
+        // console.log(dropDownList.target.value);
         props.onChangeFilter(dropDownList.target.value);
     };
 
